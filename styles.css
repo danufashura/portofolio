@@ -155,6 +155,54 @@ nav .navlinks li a:hover{
     transform: scale(1.3);
 }
 
+.pp{
+    animation: intro 5s ease;
+}
+
+.wrapper, .teks, .container-sosmed{
+    animation: muncul 4s ease;
+}
+
+@keyframes intro {
+    0%{
+        border-radius: 0%;
+        border: 0px solid #444;
+        filter: saturation(0%);
+        filter: opacity(0%);
+        transform: translateX(-100%) rotate(0);
+    }
+    25%{
+        border-radius: 0%;
+        border: 0px solid #444;
+        filter: saturation(0%);
+        filter: opacity(100%);
+        transform: translateX(0%) rotate(360deg);
+        scale: 1.2;
+    }
+    50%{
+        border-radius: 50%;
+        border: 15px solid #444;
+        filter: saturation(100%);
+        transform: translateX(0%) rotate(0);
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes muncul {
+    0%{
+        filter: opacity(0%);
+    }
+    75%{
+        filter: opacity(0%);
+    }
+    100%{
+        filter: opacity(100%);
+    }
+}
+
 .teks{
     margin-left : 0;
     font-family:montserrat;
