@@ -1,3 +1,5 @@
+/*W5*/
+
 *{
     box-sizing: border-box;
     list-style: none;
@@ -225,6 +227,7 @@ p {
 } 
 
 #s1{
+    margin-right : 2rem;
     margin-left : 2rem;
     height : 100vh;
     font-family:montserrat;
@@ -232,18 +235,13 @@ p {
 }
 
 .cont{
-    gap: 2rem;
     padding-top: 10vh;
     justify-content: space-around;
     display : flex;
-    flex-direction: column;
-    margin-left: 2rem;
-    max-width: 100%;
 }
 
 .border{
-    display: inline-block;
-    max-width: 95%;
+    display : inline-block;
     border : 5px solid pink;
     padding : 15px;
     border-radius : 15px;
@@ -253,6 +251,11 @@ p {
     font-size : 4rem;
     text-align : left;
     color : pink;
+}
+
+#s1 .border{
+    width: 500px;
+    font-family:montserrat;
 }
 
 #s1 .border p{
@@ -321,17 +324,15 @@ p {
 }
 
 #s3 .cont {
-    max-width: 95%;
     height: auto;
     margin-top : 2rem;
     display : flex;
-    flex-direction: row;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 #s3 h1{
-    margin-top: 1rem;
+    margin-top : 2rem;
     text-align : center;
     color : pink;
     font-size: 3rem;
@@ -444,7 +445,6 @@ transform: scale(1.05);
         filter: saturation(0%);
         filter: opacity(0%);
         transform: translateX(-100%) rotate(0);
-        scale: 1;
     }
     25%{
         border-radius: 0%;
