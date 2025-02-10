@@ -225,7 +225,6 @@ p {
 } 
 
 #s1{
-    margin-right : 2rem;
     margin-left : 2rem;
     height : 100vh;
     font-family:montserrat;
@@ -233,13 +232,18 @@ p {
 }
 
 .cont{
+    gap: 2rem;
     padding-top: 10vh;
     justify-content: space-around;
     display : flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    max-width: 100%;
 }
 
 .border{
-    display : inline-block;
+    display: inline-block;
+    max-width: 95%;
     border : 5px solid pink;
     padding : 15px;
     border-radius : 15px;
@@ -312,19 +316,22 @@ p {
 }
 
 #s3{
-    margin,padding:0;
+    margin-top: 20rem;
+    padding:0;
 }
 
 #s3 .cont {
+    max-width: 95%;
     height: auto;
     margin-top : 2rem;
     display : flex;
+    flex-direction: row;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 #s3 h1{
-    margin-top : 2rem;
+    margin-top: 1rem;
     text-align : center;
     color : pink;
     font-size: 3rem;
@@ -423,7 +430,7 @@ transform: scale(1.05);
 }
 
 .pp{
-    animation: intro 5s ease;
+    animation: intro 4s ease;
 }
 
 .wrapper, .teks, .container-sosmed{
@@ -437,6 +444,7 @@ transform: scale(1.05);
         filter: saturation(0%);
         filter: opacity(0%);
         transform: translateX(-100%) rotate(0);
+        scale: 1;
     }
     25%{
         border-radius: 0%;
