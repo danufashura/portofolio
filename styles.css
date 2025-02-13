@@ -82,6 +82,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position : sticky;
 }
 
 
@@ -438,7 +439,7 @@ transform: scale(1.05);
     animation: intro 4s ease;
 }
 
-.wrapper, .teks, .container-sosmed{
+.wrapper, .teks, .container-sosmed , .cont, h1, .bar{
     animation: muncul 4s ease;
 }
 
